@@ -9,16 +9,25 @@ from selenium.webdriver.chrome.options import Options
 import random
 from datetime import datetime
 
-# CHROME_PATH = '/usr/lib/chromium-browser/chromium-browser'
-CHROMEDRIVER_PATH = '/usr/lib/chromium-browser/chromedriver'
+# # CHROME_PATH = '/usr/lib/chromium-browser/chromium-browser'
+# CHROMEDRIVER_PATH = '/usr/lib/chromium-browser/chromedriver'
+# WINDOW_SIZE = "1920,1080"
+# chrome_options = Options()
+# # chrome_options.add_argument("--headless")
+# chrome_options.add_argument('--user-data-dir=~/.config/chromium')
+# # chrome_options.add_argument("profile-directory=Profile 1")
+# # chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
+# # chrome_options.binary_location = CHROME_PATH
+
+CHROME_PATH = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe'
+CHROMEDRIVER_PATH = 'C:/Users/tamir/OneDrive/PROJECTS/resources/chromedriver.exe'
 WINDOW_SIZE = "1920,1080"
 chrome_options = Options()
 # chrome_options.add_argument("--headless")
-chrome_options.add_argument('--user-data-dir=~/.config/chromium')
-# chrome_options.add_argument("profile-directory=Profile 1")
-# chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
-# chrome_options.binary_location = CHROME_PATH
-
+chrome_options.add_argument('--user-data-dir=C:\\temp\\profile 1')
+chrome_options.add_argument("profile-directory=Profile 1")
+chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
+chrome_options.binary_location = CHROME_PATH
 
 
 def random_time(time):
@@ -105,7 +114,7 @@ def is_it_new(last_massages, text_message, message_time):
 
 
 def create_bad_words_list():
-    path = "/home/pi/whatsappbot/src/hurtfulwordshebrew.txt"
+    path = "C:\\Users\\tamir\\OneDrive\\PROJECTS\\whatsapp_bot\\src\\hurtfulwordshebrew.txt"
     file = open(path, 'r', encoding='utf-8')
     bad_words_list = []
     lines = file.readlines()
@@ -168,10 +177,10 @@ def unread_usernames(last_massages, scrolls=100):
         except:
             pass
     # messages = list(filter(None, messages))
-    if(messages == None):
+    if messages is None or len(messages)==0:
         last_massages[-1][3]=0
         return last_massages
-    
+
     return messages
 
 
