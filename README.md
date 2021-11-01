@@ -1,4 +1,4 @@
-# Messenger App Wraper Bot
+# Chat App Wraper Bot
 ## Bot for Chat Monitoring.
 
 This Bot can copy messages from one group to another and monitor their content.
