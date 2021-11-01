@@ -1,9 +1,9 @@
 # Messenger App Wraper Bot
-## Bot for Chat monitoring.
+## Bot for Chat Monitoring.
 
 This Bot can copy messages from one group to another and monitor their content.
 
-The Bot was created using Selenium and BeautifulSoup libraries.
+The Bot was created using Selenium and BeautifulSoup libraries and runs on Raspberry-pi based on a Linux operation system.
 
 
 - Reads messages from one group and copies them to another group with the senders' names.
