@@ -1,0 +1,21 @@
+[19742:19847:1101/174309.661162:ERROR:object_proxy.cc(622)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[19742:19847:1101/174309.661511:WARNING:property.cc(144)] DaemonVersion: GetAndBlock: failed.
+[19742:19847:1101/174309.662450:ERROR:object_proxy.cc(622)] Failed to call method: org.freedesktop.UPower.GetDisplayDevice: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[19742:19847:1101/174309.663350:ERROR:object_proxy.cc(622)] Failed to call method: org.freedesktop.UPower.EnumerateDevices: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[19797:19797:1101/174310.052946:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is egl
+[19742:19742:1101/174311.877573:INFO:CONSOLE(0)] "The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy.", source:  (0)
+[19742:19742:1101/174312.323638:ERROR:CONSOLE(0)] "The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy.", source: https://web.whatsapp.com/ (0)
+[19742:19742:1101/174316.726273:INFO:CONSOLE(0)] "The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy.", source: https://web.whatsapp.com/ (0)
+[19797:19797:1101/174318.185551:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[19797:19797:1101/174318.190256:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+[19742:19742:1101/174318.260645:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[19742:19742:1101/174318.358487:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[19742:19742:1101/174318.411917:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[19799:19819:1101/174427.853135:WARNING:spdy_session.cc(3239)] Received RST for invalid stream11
+[19742:19742:1101/174449.381347:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[19742:19742:1101/174707.773378:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[19797:19797:1101/174743.433731:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+[19797:19858:1101/174753.904726:ERROR:latency_info.cc(149)] CompositorFrameSinkSupport::MaybeSubmitCompositorFrame, LatencyInfo vector size 103 is too big.
+[19742:19742:1101/175051.083323:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[19742:19742:1101/175400.063608:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[19797:19797:1101/175759.481195:ERROR:sync_control_vsync_provider.cc(140)] Calculated bogus refresh interval=0.291661 s, last_timebase_=77309851968 bogo-microseconds, timebase=77310435291 bogo-microseconds, last_media_stream_counter_=2096332, media_stream_counter=2096334

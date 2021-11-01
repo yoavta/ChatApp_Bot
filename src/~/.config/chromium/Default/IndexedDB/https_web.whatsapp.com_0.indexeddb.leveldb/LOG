@@ -1,0 +1,24 @@
+2021/11/01-17:43:14.138 4d5d Reusing MANIFEST /home/pi/whatsapp_bot/src/~/.config/chromium/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/01-17:43:14.139 4d5d Recovering log #20
+2021/11/01-17:43:14.505 4d5d Reusing old log /home/pi/whatsapp_bot/src/~/.config/chromium/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000020.log 
+2021/11/01-17:51:46.779 4d63 Level-0 table #25: started
+2021/11/01-17:51:47.022 4d63 Level-0 table #25: 1480790 bytes OK
+2021/11/01-17:51:47.028 4d63 Delete type=0 #20
+2021/11/01-17:51:47.603 4d61 Compacting 1@1 + 1@2 files
+2021/11/01-17:51:48.089 4d61 Generated table #26@1: 29128 keys, 2394021 bytes
+2021/11/01-17:51:48.110 4d61 Generated table #27@1: 2451 keys, 69580 bytes
+2021/11/01-17:51:48.110 4d61 Compacted 1@1 + 1@2 files => 2463601 bytes
+2021/11/01-17:51:48.113 4d61 compacted to: files[ 0 0 2 0 0 0 0 ]
+2021/11/01-17:51:48.114 4d61 Delete type=2 #25
+2021/11/01-17:51:48.115 4d61 Delete type=2 #22
+2021/11/01-17:56:04.959 4d61 Level-0 table #29: started
+2021/11/01-17:56:05.169 4d61 Level-0 table #29: 1639761 bytes OK
+2021/11/01-17:56:05.176 4d61 Delete type=0 #24
+2021/11/01-17:56:47.149 4d64 Compacting 1@1 + 2@2 files
+2021/11/01-17:56:47.706 4d64 Generated table #30@1: 48929 keys, 2339324 bytes
+2021/11/01-17:56:47.938 4d64 Generated table #31@1: 29367 keys, 1478913 bytes
+2021/11/01-17:56:47.938 4d64 Compacted 1@1 + 2@2 files => 3818237 bytes
+2021/11/01-17:56:47.950 4d64 compacted to: files[ 0 0 2 0 0 0 0 ]
+2021/11/01-17:56:47.951 4d64 Delete type=2 #29
+2021/11/01-17:56:47.951 4d64 Delete type=2 #26
+2021/11/01-17:56:47.951 4d64 Delete type=2 #27
