@@ -47,9 +47,9 @@ The Bot was created using Selenium and BeautifulSoup libraries and runs on Raspb
 
 
 ## **⚠️Warning⚠️**
-*this was built for educational and self use only.
+*this was built for educational and self use only.*
 
-This is* **not** *official API of the messenger app company or any other company what so ever,  and it is not approved to use by them in any way.*
+*This is* **not** *official API of the messenger app company or any other company what so ever,  and it is not approved to use by them in any way.*
 
 *Any use of this code is at your own risk and taking full responsebilty of such use.*
 
