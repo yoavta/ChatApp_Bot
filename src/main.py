@@ -8,7 +8,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 import random
 from datetime import datetime
-from io import open
 
 # CHROME_PATH = '/usr/lib/chromium-browser/chromium-browser'
 CHROMEDRIVER_PATH = '/usr/lib/chromium-browser/chromedriver'
@@ -89,8 +88,13 @@ def is_it_new(last_massages, text_message, message_time):
         return True
     # '11:43  10/30/2021'
     last_time = last_massages[-1][1]
-    message_time_24= datetime.strptime(message_time,"%H:%M:%S %m/%d/%Y")
-    last_time_24= datetime.strptime(last_time,"%H:%M:%S %m/%d/%Y")
+#     message_time_24= datetime.strptime(message_time,"%H:%M:%S %m/%d/%Y")
+#     last_time_24= datetime.strptime(last_time,"%H:%M:%S %m/%d/%Y")
+    print(message_time)
+    message_time_24= datetime.strptime(message_time,"%H:%M:%S %d.%m.%Y")
+    last_time_24= datetime.strptime(last_time,"%H:%M:%S %d.%m.%Y")
+
+
     if message_time_24 < last_time_24:
         return False
     else:
@@ -167,6 +171,7 @@ def unread_usernames(last_massages, scrolls=100):
     if(messages == None):
         last_massages[-1][3]=0
         return last_massages
+    
     return messages
 
 
@@ -243,3 +248,4 @@ while True:
 #     send_text(text)
 #     time.sleep(random_time(1))
 # driver.quit()
+
