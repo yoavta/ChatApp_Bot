@@ -55,7 +55,7 @@ The Bot was created using Selenium and BeautifulSoup libraries and runs on Raspb
 
 
 ## Contribution:
-thanks to <a href="https://github.com/ordrukman" target="_blank">Or Druckman</a>
+Thanks to <a href="https://github.com/ordrukman" target="_blank">Or Drukman</a>
 
 
 
