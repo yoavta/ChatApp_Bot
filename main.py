@@ -121,10 +121,10 @@ def create_bad_words_list():
 
 
 # contact emergency_contact and send them a warning message.
-def warning(driver, m, bad_word, contact):
-    print(text)
-    send_text(driver, text)
-    time.sleep(random_time(1))
+# def warning(driver, m, bad_word, contact):
+#     print(text)
+#     send_text(driver, text)
+#     time.sleep(random_time(1))
 
 
 messages1 = None
