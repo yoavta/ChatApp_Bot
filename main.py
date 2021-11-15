@@ -96,8 +96,6 @@ def is_it_new(last_massages, text_message, message_time):
     if last_massages is None:
         return True
     last_time = last_massages[-1][1]
-    #     message_time_24= datetime.strptime(message_time,"%H:%M:%S %m/%d/%Y")
-    #     last_time_24= datetime.strptime(last_time,"%H:%M:%S %m/%d/%Y")
     print(message_time)
     message_time_24 = datetime.strptime(message_time, "%H:%M:%S %d.%m.%Y")
     last_time_24 = datetime.strptime(last_time, "%H:%M:%S %d.%m.%Y")
@@ -124,13 +122,13 @@ def create_bad_words_list():
 
 # contact emergency_contact and send them a warning message.
 def warning(driver, m, bad_word, contact):
-    go_to_group(driver, contact)
-    text = "הודעה זדונית נשלחה על ידי *" + m[
-        0].rstrip() + "*     , המילה הפוגעת שזוהתה: *" + bad_word + "*    . תוכן ההודעה: " + m[2]
     print(text)
     send_text(driver, text)
     time.sleep(random_time(1))
 
+
+messages1 = None
+messages2 = None
 
 def get_messages(driver, last_massages, scrolls=100):
     messages = list()
@@ -172,58 +170,40 @@ def get_messages(driver, last_massages, scrolls=100):
 
 
 def run():
+    global messages1
+    global messages2
     driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
-    bad_words_list = create_bad_words_list()
-    child_warning_contact = {'אור דרוקמן': 'יואב תמיר', 'יואב תמיר': 'יואב תמיר'}
-    contact1 = "קבוצה ראשונה"
-    contact2 = "קבוצה שנייה"
-    emergency_contact = 'יואב תמיר'
-    messages1 = None
-    messages2 = None
+    first_time = True
+    contact1 = "1"
+    contact2 = "2"
     open_drive(driver)
     go_to_group(driver, contact1)
     messages1 = get_messages(driver, messages1, scrolls=10)
     try:
         while True:
+
             go_to_group(driver, contact2)
 
             messages2 = get_messages(driver, messages2, scrolls=10)
 
-            if messages1 and messages1[-1][3]:
+            if messages1 and messages1[-1][3] and not first_time:
                 for m in messages1:
                     text = "*" + str(m[0]) + ":* " + str(m[2])
                     send_text(driver, text)
                     time.sleep(random_time(0))
 
-                for m in messages1:
-                    for bad_word in bad_words_list:
-                        if bad_word in m[2]:
-                            contact = child_warning_contact.get(m[0].rstrip())
-                            print(str(contact))
-                            try:
-                                warning(driver, m, bad_word, emergency_contact)
-                            except:
-                                print("problem with warning")
             go_to_group(driver, contact1)
 
             messages1 = get_messages(driver, messages1, scrolls=10)
-            if messages2 and messages2[-1][3]:
-
+            if messages2 and messages2[-1][3] and not first_time:
                 for m in messages2:
                     text = "*" + str(m[0]) + ":* " + str(m[2])
                     send_text(driver, text)
                     time.sleep(random_time(0))
 
-                for m in messages2:
-                    for bad_word in bad_words_list:
-                        if bad_word in m[2]:
-                            print(str(m[0]))
-                            contact = child_warning_contact.get(str(m[0]).rstrip())
-                            print(str(contact))
-                            try:
-                                warning(driver, m, bad_word, emergency_contact)
-                            except:
-                                print("problem with warning")
+            first_time = False
+
+
     except Exception as error:
         print('Caught this error: ' + repr(error))
         driver.quit()
